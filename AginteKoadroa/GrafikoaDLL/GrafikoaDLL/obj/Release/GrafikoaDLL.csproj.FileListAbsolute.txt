@@ -1,0 +1,7 @@
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\bin\Release\erronka1DLL.dll
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\bin\Release\erronka1DLL.pdb
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\obj\Release\erronka1DLL.Grafikoa.resources
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\obj\Release\GrafikoaDLL.csproj.GenerateResource.cache
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\obj\Release\GrafikoaDLL.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\obj\Release\erronka1DLL.dll
+C:\Users\USUARIO\OneDrive\Documentos\erronkaFinala\AginteKoadroa\erronka1DLL\erronka1DLL\obj\Release\erronka1DLL.pdb
