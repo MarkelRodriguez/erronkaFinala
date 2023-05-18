@@ -12,9 +12,12 @@ namespace AginteKoadroa.Models
     {
         [Key]
         public int Id { get; set; }
-        public DateTime Data { get; set; }
+        public string Data { get; set; }
         public int Puntuazioa { get; set; }
-        [ForeignKey("Erabiltzailea")]
+        [ForeignKey("Id")]
         public virtual erabiltzailea Erabiltzailea{ get; set; }
+
+    
+
     }
 }

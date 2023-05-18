@@ -146,7 +146,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\erronka1DLL\erronka1DLL\GrafikoaDLL.csproj">
+    <ProjectReference Include="..\GrafikoaDLL\GrafikoaDLL\GrafikoaDLL.csproj">
       <Project>{666C1DF3-0C8A-48C2-99F2-422A6C1FCFAD}</Project>
       <Name>GrafikoaDLL</Name>
     </ProjectReference>

@@ -29,17 +29,10 @@ namespace AginteKoadroa
         /// </summary>
         private void InitializeComponent()
         {
-            this.grafikoa1 = new erronka1DLL.Grafikoa();
             this.CombBoxUsers = new System.Windows.Forms.ComboBox();
             this.lstViewPartidak = new System.Windows.Forms.ListView();
+            this.grafikoa1 = new erronka1DLL.Grafikoa();
             this.SuspendLayout();
-            // 
-            // grafikoa1
-            // 
-            this.grafikoa1.Location = new System.Drawing.Point(42, 118);
-            this.grafikoa1.Name = "grafikoa1";
-            this.grafikoa1.Size = new System.Drawing.Size(420, 297);
-            this.grafikoa1.TabIndex = 0;
             // 
             // CombBoxUsers
             // 
@@ -65,15 +58,22 @@ namespace AginteKoadroa
             this.lstViewPartidak.TabIndex = 2;
             this.lstViewPartidak.UseCompatibleStateImageBehavior = false;
             // 
+            // grafikoa1
+            // 
+            this.grafikoa1.Location = new System.Drawing.Point(42, 104);
+            this.grafikoa1.Name = "grafikoa1";
+            this.grafikoa1.Size = new System.Drawing.Size(420, 296);
+            this.grafikoa1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(824, 749);
+            this.Controls.Add(this.grafikoa1);
             this.Controls.Add(this.lstViewPartidak);
             this.Controls.Add(this.CombBoxUsers);
-            this.Controls.Add(this.grafikoa1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -82,9 +82,10 @@ namespace AginteKoadroa
 
         #endregion
 
-        private erronka1DLL.Grafikoa grafikoa1;
+        
         private System.Windows.Forms.ComboBox CombBoxUsers;
         private System.Windows.Forms.ListView lstViewPartidak;
+        private erronka1DLL.Grafikoa grafikoa1;
     }
 }
 

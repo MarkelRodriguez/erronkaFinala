@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AginteKoadroa", "AginteKoadroa\AginteKoadroa.csproj", "{232EC7BD-F0FF-4B7F-96A0-29F1337F3043}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrafikoaDLL", "erronka1DLL\erronka1DLL\GrafikoaDLL.csproj", "{666C1DF3-0C8A-48C2-99F2-422A6C1FCFAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrafikoaDLL", "GrafikoaDLL\GrafikoaDLL\GrafikoaDLL.csproj", "{666C1DF3-0C8A-48C2-99F2-422A6C1FCFAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

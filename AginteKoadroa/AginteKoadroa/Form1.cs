@@ -1,4 +1,5 @@
 ﻿using AginteKoadroa.Models;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,36 +22,48 @@ namespace AginteKoadroa
 
         private void CombBoxUsers_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            using (var db = new ErronkaDB())
-            {
-                var puntuazioa = db.partida
-
-
-               .Include("erabiltzailea")
-               .Where(b => b.Erabiltzailea.Equals(CombBoxUsers.Text) )
-               
-               .Take(5)
-               .ToDictionary( g => g.Puntuazioa);
+            List<int> puntuazioak = new List<int>();
+            string connection = "Host=192.168.1.53;Username=markel;Password=markel;Database=erronkafinala";
+            string sql = "SELECT Erabiltzailea, Puntuazioa FROM partida WHERE Erabiltzailea = @erabiltzailea  ORDER BY Puntuazioa DESC LIMIT 5;";
+            NpgsqlConnection conn;
 
 
-                if (puntuazioa != null)
-                {
-                    if (puntuazioa.Count > 0)
+            conn = new NpgsqlConnection(connection);
+            conn.Open();
+            
+
+            NpgsqlCommand command = new NpgsqlCommand(sql, conn);
+
+            command.Parameters.Add("@erabiltzailea", NpgsqlTypes.NpgsqlDbType.Varchar);
+            command.Parameters["@erabiltzailea"].Value = CombBoxUsers.Text;
+
+
+
+            NpgsqlDataReader reader = command.ExecuteReader();
+           
+                    while (reader.Read())
                     {
-                        var kontrolak = grafikoa1.Controls.OfType<System.Windows.Forms.DataVisualization.Charting.Chart>();
+                        
+                        string name = reader.GetString(0);
+                        puntuazioak.Add(reader.GetInt32(1));
+
+                        
+                    }
+                    var kontrolak = grafikoa1.Controls.OfType<System.Windows.Forms.DataVisualization.Charting.Chart>();
                         foreach (var kontrola in kontrolak)
                         {
-                            
-                            
-                            kontrola.DataSource = puntuazioa;
-                            kontrola.Series[0].YValueMembers = "Value";
-                            
-                            kontrola.DataBind();
+
+
+
+                            kontrola.Series[0].Points.DataBindY(puntuazioak);
+
+                          
                         }
-                    }
-                }
-            }
+
+     
+
+           
         }
+        
     }
 }
