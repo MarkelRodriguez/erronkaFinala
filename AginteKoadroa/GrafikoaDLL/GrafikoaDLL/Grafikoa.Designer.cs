@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,11 @@
             this.chart1.Size = new System.Drawing.Size(553, 410);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.White;
+            title1.Name = "Title1";
+            title1.Text = "Erabiltzailearen 5 partida hoberenak";
+            this.chart1.Titles.Add(title1);
             // 
             // Grafikoa
             // 
